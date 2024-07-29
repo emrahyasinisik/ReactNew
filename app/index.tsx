@@ -1,19 +1,14 @@
 import React from "react";
-import{View,Text,SafeAreaView,Button,StyleSheet } from 'react-native';
-
-
+import{View,Text,SafeAreaView,StyleSheet,TouchableOpacity } from 'react-native';
+import Card from '../components/card/Card';
 
 function app(){
   return(
     <SafeAreaView style={styles.container}>
- <View style={styles.card_container}>
-  <View><Text>Eddard Stark</Text>
-<Text>Winter is coming...</Text>
-</View>
+<Card title="Eddard Stark" text="Winter is coming..."></Card>
+<Card title="Arif IŞIK" text="Uzaylılar tarafından kaçırıldım.Evet tarafından"></Card>
+<Card title="Serbest" text="İlhami abi sen söyle, ben başka ilde miyim?"></Card>
 
- </View>
-
- 
     </SafeAreaView>
   )
 }
@@ -23,11 +18,7 @@ const styles=StyleSheet.create({
   container:{
     flex:1,
     backgroundColor:'#e0e0e0',
-
   },
-  card_container:{
-backgroundColor:'white',
-  }
-
+  
 })
 export default app;
